@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="sr-only"><img src="./images/logo.png" alt="칼리" /></h1>
+      <ul class="header-guide">
+        <li><a href="/">회원 가입</a></li>
+        <li><a href="/">로그인</a></li>
+        <li>
+          <a href="/">고객센터<i class="fa-solid fa-caret-down"></i></a>
+        </li>
+      </ul>
+      <div class="header-box">
+        <img alt="마켓 컬리" src="./images/logo.png" />
+        <a href="/">마켓칼리</a>
+        <a href="/">뷰티칼리</a>
+        <form
+          action="https://formspree.io/f/xeqwwbwk"
+          method="POST"
+          class="search-form"
+        >
+          <fieldset>
+            <h2 class="sr-only">검색</h2>
+            <div class="search-form__content">
+              <div class="search-form__formInput">
+                <label for="search" class="sr-only"
+                  >검색어</label
+                >
+                <input
+                  type="search"
+                  id="search"
+                  name="search"
+                  required
+                  class="search-form__input"
+                  placeholder="검색어를 입력하세요."
+                />
+                <button type="submit" class="search-form__button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <ul class="header-icon">
+          <li>
+            <a href="/"><img alt="맵" src="./images/mark.png" /></a>
+          </li>
+          <li>
+            <a href="/"><img alt="하트" src="./images/heart.png" /></a>
+          </li>
+          <li>
+            <a href="/"><img alt="카트" src="./images/cart.png" /></a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="header-menu">
+          <li><button class="dropdown"><i class="fa-solid fa-bars"></i>카테고리</button></li>
+          <li><a href="/">신상품</a></li>
+          <li><a href="/">베스트</a></li>
+          <li><a href="/">특가/혜택</a></li>
+          <li>
+            <a href="/"><span class="accent">샛별 낮</span> 배송안내</a>
+          </li>
+        </ul>
+        <ul class="dropdown-content">
+          <li><a href="/" class="cartegory-btn">선물하기</a></li>
+          <li><a href="/" class="cartegory-btn">채소</a></li>
+          <li><a href="/" class="cartegory-btn">전통주</a></li>
+          <li><a href="/" class="cartegory-btn">와인</a></li>
+          <li><a href="/" class="cartegory-btn">건강식품</a></li>
+          <li><a href="/" class="cartegory-btn">주방용품</a></li>
+          <li><a href="/" class="cartegory-btn">가전용품</a></li>
+          <li><a href="/" class="cartegory-btn">반려동물</a></li>
+          <li><a href="/" class="cartegory-btn">간편식</a></li>
+          <li><a href="/" class="cartegory-btn">여행</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+  </body>
+</html>
