@@ -2,7 +2,120 @@
 @import url(./reset.css);
 @import url(./sr-only.css);
 
+.accent{
+  color : purple;
+  font-weight: 700;
+}
 a{
   text-decoration: none;
   color: inherit;
+}
+
+header{
+  background: yellow;
+  width: 65.625rem;
+  margin: auto;
+}
+.header-guide{
+  background: pink;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+.service-btn{
+  border: none;
+  background: transparent;
+}
+.header-box{
+  background: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem 0;
+}
+.logoSwitch{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header-icon{
+  background: purple;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+img{
+  object-fit: contain;
+}
+.search-form{
+  background: green;
+
+}
+
+.header-menu{
+  background: red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+/* dropdown */
+.dropdown{
+  border: none;
+  background: transparent;
+}
+.dropdown-content{
+  padding: 0.5rem;
+  width: 247px;
+  height: auto;
+  border-radius: 5px;
+  background: white;
+  /* --isActive */
+  display: none;
+  position: absolute;
+}
+.dropdown-content li a{
+  background: gray;
+  line-height: 1.5;
+}
+.dropdownContainer:hover .dropdown-content{
+  display: block;
+}
+
+.menu__content{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+/* search input */
+#search{
+  width: 400px;
+  height: 60px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.search-form__formInput{
+  position: relative;
+}
+.search-form__button{
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 16px);
+  border: none;
+  background: transparent;
+  font-size: 24px;
+}
+
+.delivery{
+  padding: 4px 8px;
+  border-radius: 50px;
+  border: 1px solid purple;
+  background: transparent;
 }
