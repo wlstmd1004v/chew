@@ -1,10 +1,17 @@
 @import url(./a11y.css);
 @import url(./reset.css);
 @import url(./sr-only.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard.css");
 
+:root{
+  --color-primary: #5F0080;
+}
+*{
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
 .accent{
-  color : purple;
-  font-weight: 700;
+  color : var(--color-primary);
 }
 a{
   text-decoration: none;
@@ -12,12 +19,10 @@ a{
 }
 
 header{
-  background: yellow;
   width: 65.625rem;
   margin: auto;
 }
 .header-guide{
-  background: pink;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -29,21 +34,26 @@ header{
   background: transparent;
 }
 .header-box{
-  background: skyblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   margin: 2rem 0;
 }
+/* 위 첨자 */
+sup{
+  vertical-align: super;
+  font-size: small;
+  color: orangered;
+}
 .logoSwitch{
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  font-weight: bold;
 }
 .header-icon{
-  background: purple;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -51,13 +61,9 @@ header{
 img{
   object-fit: contain;
 }
-.search-form{
-  background: green;
 
-}
 
 .header-menu{
-  background: red;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -76,11 +82,11 @@ img{
   border-radius: 5px;
   background: white;
   /* --isActive */
-  display: none;
+  /* display: none; */
   position: absolute;
+  border: 1px solid gray;
 }
 .dropdown-content li a{
-  background: gray;
   line-height: 1.5;
 }
 .dropdownContainer:hover .dropdown-content{
@@ -92,6 +98,8 @@ img{
   flex-flow: row nowrap;
   justify-content: space-around;
   flex-grow: 1;
+  align-items: center;
+  height: 100%;
 }
 /* search input */
 #search{
@@ -100,6 +108,10 @@ img{
   padding-left: 1rem;
   font-size: 1rem;
   border-radius: 5px;
+}
+.search-form__input{
+
+  border: 1px solid var(--color-primary);
 }
 .search-form__formInput{
   position: relative;
@@ -116,6 +128,6 @@ img{
 .delivery{
   padding: 4px 8px;
   border-radius: 50px;
-  border: 1px solid purple;
+  border: 1px solid var(--color-primary);
   background: transparent;
 }
