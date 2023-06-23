@@ -5,6 +5,7 @@
 
 :root{
   --color-primary: #5F0080;
+  --gray-400: #898989;
 }
 *{
   font-size: 1rem;
@@ -24,10 +25,14 @@ header{
 }
 .header-guide{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
   padding: 0.5rem 0;
+}
+.header-guide span{
+  border-right: 1px solid var(--gray-400);
+  padding-right: 1rem;
 }
 .service-btn{
   border: none;
@@ -52,6 +57,7 @@ sup{
   justify-content: space-between;
   gap: 1rem;
   font-weight: bold;
+  color: var(--gray-400);
 }
 .header-icon{
   display: flex;
@@ -82,7 +88,7 @@ img{
   border-radius: 5px;
   background: white;
   /* --isActive */
-  /* display: none; */
+  display: none;
   position: absolute;
   border: 1px solid gray;
 }
