@@ -20,6 +20,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+ul{
+  list-style-type: none;
+}
 footer{
   /* background: lightblue; */
   position: fixed;
@@ -55,6 +58,9 @@ footer{
   /* background: #5F0080; */
   margin-right: 1rem;
 }
+.tell{ 
+  display: inline;
+}
 .footer__contact div{
   /* background: green; */
   margin-bottom: 1rem;
@@ -73,8 +79,11 @@ footer{
 .footer__info{
   /* background: lightsalmon; */
 }
-.footer__info span a{
+.footer__info ul li{
   margin-right: 0.5rem;
+}
+.footer__info ul li{
+  display: inline;
 }
 address{
   padding: 1rem 0;
