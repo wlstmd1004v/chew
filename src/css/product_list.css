@@ -12,12 +12,12 @@ body {
     display: flex;
 }
 
-.sss {
+.menu {
     display: flex;
     flex-direction: column;
 }
 
-.ddd {
+.site {
     display: flex;
     width: 1050px;
     margin: 0 auto;
