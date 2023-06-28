@@ -22,8 +22,8 @@ ul{
 }
 footer{
   /* background: lightblue; */
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   width: 100vw;
   padding: 1rem 0 0 0;
   border-top: 1px solid #d5d5d5;
