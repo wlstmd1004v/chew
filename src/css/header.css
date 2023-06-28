@@ -62,6 +62,7 @@ header {
   display: inline;
   color: var(--grey);
 }
+
 .header-guide {
   display: flex;
   justify-content: flex-end;
@@ -401,3 +402,4 @@ header {
     border: 1px solid var(--deep-grey);
     border-radius: 30px;
   }
+
