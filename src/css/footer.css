@@ -1,12 +1,14 @@
 @import url(a11y.css);
 /* @import url(reset.css); */
 @import url(sr-only.css);
+@import url(theme.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard.css");
 
 :root{
   --color-primary: #5F0080;
   --gray-400: #898989;
 }
+
 .accent{
   color : var(--color-primary);
 }
@@ -27,6 +29,8 @@ footer{
   /* background: lightblue; */
   position: fixed;
   bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   width: 100vw;
   padding: 1rem 0 0 0;
   border-top: 1px solid #d5d5d5;
