@@ -1,0 +1,146 @@
+@import url(a11y.css);
+/* @import url(reset.css); */
+@import url(sr-only.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard.css");
+
+:root{
+  --color-primary: #5F0080;
+  --gray-400: #898989;
+}
+.accent{
+  color : var(--color-primary);
+}
+*{
+  font-family: "pretendard" ,sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style-type: none;
+}
+footer{
+  /* background: lightblue; */
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem 0 0 0;
+  border-top: 1px solid #d5d5d5;
+}
+/*  */
+/* footer__top */
+.footer__top{
+  /* background: skyblue; */
+  display: grid;
+  gap: 1rem;
+  /* grid-template-rows: repeat(48px, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "one one"
+  "two two"
+  ;
+  width: 1050px;
+  margin: auto;
+}
+/* footer__contact */
+.footer__contact{
+  /* background: pink; */
+}
+.footer__contact h4{
+}
+.footer__contact dl{
+  padding: 0.5rem 0;
+  /* background: yellow; */
+}
+.customerService{
+  
+}
+.contact__number{
+  /* background: pink; */
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: inline;
+}
+.contact__hour{
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline;
+}
+.contact{
+  border: 1px solid var(--gray-400);
+  display: block;
+  width: 132px;
+  height: 32px;
+  padding: 4px;
+  text-align: center;
+  float: left;
+  margin-right: 1rem;
+}
+.contact__order div{
+  line-height: 1.5;
+}
+/* footer__info */
+.footer__info{
+  /* background: lightsalmon; */
+}
+.footer__info ul li{
+  margin-right: 0.5rem;
+}
+.footer__info ul li{
+  display: inline;
+}
+address{
+  padding: 1rem 0;
+  font-style: normal;
+  font-size: 14px;
+}
+address div{
+  /* display: block; */
+  line-height: 1.5;
+}
+.sns a{
+  padding: 0.5rem;
+}
+/* footer__client */
+.footer__client{
+  /* background: lightsteelblue; */
+  grid-area: two;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  font-size: 10px;
+  padding-bottom: 2rem;
+  border-top: 1px solid #d5d5d5;
+  padding-top: 2rem;
+}
+.footer__client div{
+  /* background: peru; */
+}
+.footer__client img{
+  float: left;
+  margin-right: 1rem;
+  /* background: green; */
+}
+.footer__client span{
+  /* background: yellow; */
+}
+/*  */
+/* footer__bottom */
+.footer__bottom{
+  background: #e9e9e9;
+  color: var(--gray-400);
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.footer__bottom small{
+  display: block;
+}
+.footer__bottom small:first-child{
+  padding-bottom: 0.5rem;
+}

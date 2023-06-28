@@ -451,7 +451,6 @@ h5 {
   height: 44px;
   border-radius: 5px;
   margin: 10px;
-  
 }
 
 input[type="button"] {
@@ -511,8 +510,8 @@ label, input {
 }
 
 .yyyymmdd {
-  width: 310px;
-    padding: 10px 0 10px 0px;
+  width: 270px;
+    padding: 10px 0 10px 0;
     font-weight: 500;
     font-size: 14px;
     color: #333;
@@ -526,10 +525,11 @@ label, input {
 .side-font {
   position: absolute;
   text-align: left;
-  width: 500px;
+  width: 450px;
   text-align: center;
-  font-size: 12px;
+  font-size: 8px;
   margin: 60px 0px;
+  clear: #898989;
 }
 
 
@@ -556,31 +556,43 @@ height: 500px;
 
 .agrr {
     padding: 0px 20px;
-    font-size: 14px;
+    font-size: 12px;
     width: 200px;
     height: 24px;
     margin: 10px;
 }
 
+.gen {
+ margin: 0 5px 10px 30px;
+ font-weight: 700;
+}
+
+.suggestion {
+  margin: 0px 5px 50px 20px;
+  font-weight: 700;
+}
+
 .agrr2 {
-  width: 550px;
+  width: 400px;
   float: center;
+  margin: 0 100px 0 100px;
 }
 
 .userID {
   width: 110px;
-    padding: 20px 0 20px 0px;
     font-weight: 700;
     font-size: 14px;
     color: #333;
     line-height: 10px;
     vertical-align: top;
     text-align: left;
+    margin: 20px 0px 0px 0px;
 }
 
 
 
 .cartegory-btns {
+  font-size: 12px;
   font-weight: 700;
   margin: 0px;
   color: #5f0080;
@@ -635,7 +647,6 @@ ul{
 }
 footer{
   /* background: lightblue; */
-  position: fixed;
   bottom: 0;
   width: 100vw;
   padding: 1rem 0 0 0;
