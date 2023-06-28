@@ -48,7 +48,7 @@ header {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: purple;
+  background-color: var(--purple);
   padding: 10px;
   margin-bottom: 10px;
 }
