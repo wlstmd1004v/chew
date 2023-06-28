@@ -1,42 +1,44 @@
-@import url("../css/reset.css");
-@import url("../css/sr-only.css");
-@import url("../css/theme.css");
+@import url(a11y.css);
+@import url(reset.css);
+@import url(sr-only.css);
+@import url(theme.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard.css");
+/* @import url(footer.css); */
+/* @import url(header.css); */
 
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-* {
+*{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "pretendard", sans-serif;
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+}
 ul {
   list-style: none;
 }
 
-a {
-  color: inherit;
-  text-decoration-line: none;
-}
-
-body {
+/* header */
+/* header */
+.headerWarpper{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "pretendard" ,sans-serif;
+  width: 100%;
 }
-
+.accent {
+  color: var(--purple);
+}
 header {
   width: 100%;
   height: auto;
+  /* background: pink; */
 }
 
-.accent {
-  color: var(--purple);
-  font-family: "pretendard", sans-serif;
-}
 
 .sup {
   position: absolute;
@@ -52,7 +54,7 @@ header {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: var(--purple);
+  background-color: var(--color-primary);
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -62,11 +64,16 @@ header {
   display: inline;
   color: var(--grey);
 }
-
+.guide-wrapper{
+  display: flex;
+  justify-content: center;
+}
 .header-guide {
   display: flex;
   justify-content: flex-end;
   margin: 0px 28px 40px 0px;
+  /* background: pink; */
+  width: 1050px;
 }
 
 .header-guide li a,
@@ -402,4 +409,262 @@ header {
     border: 1px solid var(--deep-grey);
     border-radius: 30px;
   }
+}
 
+
+/* main */
+/* main */
+
+main{
+  /* padding: 4rem 0; */
+}
+main button{
+  background-color: var(--gray-400);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* main__banner */
+.main__banner{
+  position: relative;
+  min-width: 1050px;
+}
+.banner__img img{
+  width: 100%;
+}
+/* banner__button */
+.banner__btn{
+  color: white;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+}
+.left{
+  left: 10%;
+}
+.right{
+  right: 10%;
+}
+
+/* main__nav */
+.main__nav{
+  position: fixed;
+  top: calc(50% - 4rem);
+  right: 2.5rem;
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  z-index: 1;
+}
+.nav__container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 0.5rem;
+} 
+.nav__title{
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.nav__btn{
+  background: transparent;
+}
+
+/* main__wrapper */
+.main__wrapper{
+  width: 1050px;
+  margin: auto;
+}
+.wrapper__title{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  padding: 40px 0;
+}
+/* warpper__container */
+.warpper__container{
+  position: relative;
+}
+.wrapper__btn{
+  position: absolute;
+  top: calc(50% - 6em);
+  right: -16px;
+  background: white;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.1);
+}
+.wrapper__banner{
+  padding: 80px 0;
+}
+
+/* container__product */
+.container__product{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.product__list{
+
+}
+.product__list figcaption{
+  line-height: 2;
+}
+.discount{
+  color: red;
+}
+.totalCost, .discount{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.originalCost{
+  text-decoration-line: line-through;
+  color: var(--gray-400);
+}
+
+
+/* footer   */
+/* footer   */
+
+.accent{
+  color : var(--color-primary);
+}
+
+/* *{
+  font-family: "pretendard" ,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style-type: none;
+}
+footer{
+  /* background: lightblue; */
+  /* position: fixed;
+  bottom: 0; */
+  width: 100vw;
+  padding: 1rem 0 0 0;
+  border-top: 1px solid #d5d5d5;
+  font-family: "pretendard", sans-serif;
+  margin-top: 4rem;
+}
+/*  */
+/* footer__top */
+.footer__top{
+  /* background: skyblue; */
+  display: grid;
+  gap: 1rem;
+  /* grid-template-rows: repeat(48px, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "one one"
+  "two two"
+  ;
+  width: 1050px;
+  margin: auto;
+}
+/* footer__contact */
+.footer__contact{
+  /* background: pink; */
+}
+.footer__contact h4{
+}
+.footer__contact dl{
+  padding: 0.5rem 0;
+  /* background: yellow; */
+}
+.customerService{
+  
+}
+.contact__number{
+  /* background: pink; */
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: inline;
+}
+.contact__hour{
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline;
+}
+.contact{
+  border: 1px solid var(--gray-400);
+  display: block;
+  width: 132px;
+  height: 32px;
+  padding: 4px;
+  text-align: center;
+  float: left;
+  margin-right: 1rem;
+}
+.contact__order div{
+  line-height: 1.5;
+}
+/* footer__info */
+.footer__info{
+  /* background: lightsalmon; */
+}
+.footer__info ul li{
+  margin-right: 0.5rem;
+}
+.footer__info ul li{
+  display: inline;
+}
+address{
+  padding: 1rem 0;
+  font-style: normal;
+  font-size: 14px;
+}
+address div{
+  /* display: block; */
+  line-height: 1.5;
+}
+.sns a{
+  padding: 0.5rem;
+}
+/* footer__client */
+.footer__client{
+  /* background: lightsteelblue; */
+  grid-area: two;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  font-size: 10px;
+  padding-bottom: 2rem;
+  border-top: 1px solid #d5d5d5;
+  padding-top: 2rem;
+}
+.footer__client div{
+  /* background: peru; */
+}
+.footer__client img{
+  float: left;
+  margin-right: 1rem;
+  /* background: green; */
+}
+.footer__client span{
+  /* background: yellow; */
+}
+/*  */
+/* footer__bottom */
+.footer__bottom{
+  background: #e9e9e9;
+  color: var(--gray-400);
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.footer__bottom small{
+  display: block;
+}
+.footer__bottom small:first-child{
+  padding-bottom: 0.5rem;
+}
