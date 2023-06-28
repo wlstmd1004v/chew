@@ -23,26 +23,30 @@ a{
 ul{
   list-style-type: none;
 }
-.footer {
+footer{
+  /* background: lightblue; */
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100vw;
+  padding: 1rem 0 0 0;
+  border-top: 1px solid #d5d5d5;
+}
+/*  */
+/* footer__top */
+.footer__top{
+  /* background: skyblue; */
+  display: grid;
+  gap: 1rem;
+  /* grid-template-rows: repeat(48px, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "one one"
+  "two two"
+  ;
   width: 1050px;
-  margin: 0 auto;
-  padding-bottom: 60px;
-  font-weight: 400;
-  letter-spacing: -.2px;
-  line-height: 1.5;
+  margin: auto;
 }
 
-.footer::after {
-  display: block;
-  content: '';
-  clear: both;
-}
-
-.footer .inner_footer {
-  /* overflow: hidden; */
-  padding-bottom: 20px;
-  line-height: 1.5;
-}
 .info_container{
   margin-top: 4rem;
 }
@@ -85,52 +89,39 @@ ul{
   gap: 3rem;
 }
 .order{
-  margin: 1rem 0;
-  font-size: 12px;
-}
-.hours{
-  margin-left: 3rem;
-  line-height: 40px;
-  font-weight: 400;
-}
-.inner_footer .cc_call .tit {
-  padding-top: 4px;
-  font-weight: 800;
-  font-size: 38px;
-  color: #333;
-  line-height: 36px;
-  letter-spacing: -.5px;
-  white-space: nowrap;
-  /* background: pink; */
-}
-
-.cc_footer .list {
-  font-size: 14px;
-  color: #333;
-  line-height: 22px;
-  letter-spacing: -.2px;
-}
-
-
-.cc_footer .cc_kakao .tit,
-.cc_footer .cc_qna .tit,
-.cc_footer .cc_or .tit {
+  display: flex;
+  width: 140px;
   height: 40px;
-  padding-top: 7px;
-  margin-top: 3px;
-  border: 1px solid #e3e3e3;
-  border-radius: 3px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #333;
-  line-height: 22px;
-  text-align: center;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 4p
 }
 
-.cc_footer .list dd {
-  color: #333;
+.contact__number{
+  /* background: pink; */
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: inline;
 }
-/* footer__info */
+.contact__hour{
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline;
+}
+.contact{
+  border: 1px solid var(--gray-400);
+  display: block;
+  width: 132px;
+  height: 32px;
+  padding: 4px;
+  text-align: center;
+  float: left;
+  margin-right: 1rem;
+}
+.contact__order div{
+  line-height: 1.5;
+}
 
 .footer__info ul li{
   margin-right: 0.5rem;
@@ -143,8 +134,8 @@ address{
   font-style: normal;
   font-size: 14px;
 }
-address span{
-  display: inline-block;
+address div{
+  /* display: block; */
   line-height: 1.5;
 }
 .sns a{
@@ -181,5 +172,5 @@ address span{
   display: block;
 }
 .footer__bottom small:first-child{
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
