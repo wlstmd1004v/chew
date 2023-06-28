@@ -1,28 +1,73 @@
-# 15먹조의 html/css 프로젝트
+# 🦁15먹조 Project 15 - Market Karly 🛒
+<p align="center">
+<img src="https://github.com/ingbin-git/LikeLionProject-Team12/assets/128195013/63a1811c-06e4-4389-8172-06530e8b2d20" width="500px"/>
+</p>
 
-## **프로젝트 진행 시 준수사항**
+### 프론트엔드 스쿨 6기 html/css Project - 15조
 
-프로젝트 요구사항을 분석해 구현하기 위한 가이드를 잘 참고해 진행해보세요.
+> 기간 : 2023년 6월 23일 ~ 2023년 6월 28일
 
-## 웹 표준 마크업 & 스타일링
-
-- 적절한 헤딩 사용 및 시맨틱 마크업에 신경써 주세요.
-  예 - 버튼 기능을 하는 UI를 마크업 할 때 <div> 등 가급적 의미없는 요소를 사용하지 마세요.
-  다만 <div> 요소를 사용하지 말라는 의미가 아닙니다.
-- 유효성 검증을 통해 문법 오류가 발생하지 않도록 구현해야 합니다.
-- 페이지 단위로 구현해주세요. (컴포넌트 단위 구현은 React 프로젝트에서 진행됩니다.)
-- 스타일 작성 시, CSS를 사용하거나 [Sass](https://sass-lang.com/) 등 프리프로세서 기술 중 자유롭게 선태학여 사용하시면 됩니다.
-- 네이밍 컨벤션은 [BEM](https://getbem.com/) 방식을 사용해 주세요. (선택사항)
+## Project 구현
 
 ---
 
-## 웹 접근성
 
-- 이미지의 경우, 대체 텍스트 제공이 필요합니다.
-- 마우스로 조작할 수 있는 기능은 키보드로도 접근 및 조작이 가능해야 합니다.
-- 폼 컨트롤은 식별 가능한 레이블이 필요합니다.
-  (시각적으로 표현되지 않더라도 스크린 리더가 읽을 수 있게 처리해야 합니다)
-- 명도대비는 최소 4.5대 1을 준수해야 합니다. (`24px`, `18px Bold`인 경우, 최소 3대 1까지 허용 → [참고](https://www.w3.org/TR/WCAG22/#contrast-minimum))
-- 좀 더 상세한 웹접근성 가이드 라인 및 [체크리스트](https://www.notion.so/32d50962016c4c90a04c8447298434fc?pvs=21)는 사람인에서 공개한 정보를 참고해 주세요.
+1. 메인 페이지
 
-[소개 | 사람인 웹 접근성 교육](https://saramin.github.io/a11y)
+<img src="https://github.com/wlstmd1004v/home-work/assets/111503649/7094a8f4-c1f8-4640-9107-6090bf163bae" width="50%">
+
+2. 로그인, 회원가입 페이지
+
+<img src="https://github.com/wlstmd1004v/home-work/assets/111503649/e3b0a9ef-b637-4f97-a705-2c0ea1e3b85d" width="50%">
+
+3. 베스트 상품 페이지
+  
+  <img src="https://github.com/wlstmd1004v/home-work/assets/111503649/18abb6db-e74a-4b84-b3b9-9f82560bf735" width="50%">
+
+4. 상품 상세 설명 페이지
+
+  <img src="https://github.com/wlstmd1004v/home-work/assets/111503649/d90b50e0-f5c0-4f3c-a67d-e2657de2dd25" width="50%">
+
+
+###  크로스 브라우징(Cross Browsing)
+
+> 사용자의 모던 브라우저 환경에 맞추어 모두 사용 가능합니다.
+  <div>
+    <img src="https://cdn.discordapp.com/attachments/1120944741626941470/1123258653198254090/2023-06-27_11.28.42.png" width="450px">
+  </div>
+
+### 👨🏻‍💻 TEAM 소개 👩🏻‍💻
+|             [방서빈(조장)](https://github.com/seobinbang7)                |                 [김성재](https://github.com/qwe11qwe)                  |         [조지현](https://github.com/jellyjoji)         |         [전진승](https://github.com/wlstmd1004v)        |
+| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| ![방서빈의 프로필 사진](https://github.com/wlstmd1004v/home-work/assets/111503649/14a0d314-d7fc-44ee-b585-1476ceacc5e3) | ![김성재의 프로필 사진](https://github.com/wlstmd1004v/home-work/assets/111503649/ed174741-b849-42eb-8a13-7e3751071cbf) | ![조지현의 프로필 사진](https://github.com/wlstmd1004v/home-work/assets/111503649/ba4dc071-4eaf-4b02-970a-1639c3a23060) | ![전진승의 프로필 사진](https://github.com/wlstmd1004v/home-work/assets/111503649/ab539b77-9a6b-43e4-91ed-725a0fd3b896) |
+
+### 💻 담당 기능 💻
+| 이름       | 담당 기능          |
+| ---------- | ----------------------------------------|
+| 공통   | header, footer  | 
+| 방서빈 | 상품 상세 설명 페이지 | 
+| 김성재 | 로그인, 회원가입 페이지 | 
+| 조지현 | 메인 페이지 | 
+| 전진승 | 베스트 상품 페이지 |
+
+
+### ⚒️ Skills
+<p herf="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=html,css,git,github,figma"/>
+</p>
+
+### Project 목표
+
+웹 접근성을 고려하여 aria-label,aria-hidden 등을 활용함.  
+
+깃허브를 활용하여 develop 브랜치 만들어서 하위에 팀원들의 브랜치를 만들고 협업함
+
+### 개인 목표
+
+방서빈 : 웹접근성을 높이는 겁니다!
+
+김성재 : CSS 를 더 많이 이해하고 활용하여 코드수를 최대한 줄여 깔끔하게 만들려고함
+
+전진승 : 웹 접근성을 고려한 html 마크업을 짜려고 하였고 css 배치를 깔끔하게 만들려고 함
+
+조지현 : 사용자 접근성을 고려한 웹 메인 페이지 제작함
