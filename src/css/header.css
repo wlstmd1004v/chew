@@ -61,6 +61,7 @@ header {
   display: inline;
   color: var(--grey);
 }
+
 .header-guide {
   display: flex;
   justify-content: flex-end;
