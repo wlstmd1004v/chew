@@ -403,6 +403,7 @@ header {
   }
 
   .header-menu li:nth-child(5) {
+    border: 1px solid var(--deep-grey);
     padding: 10px;
     border-radius: 30px;
   }
