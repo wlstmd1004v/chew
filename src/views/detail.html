@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="stylesheet" href="../css/a11y.css" />
+    <title>product_detail</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <div class="bar">
+      <span   
+        >지금 가입하고 인기상품 <strong>100원</strong>에
+        받아가세요!</span
+      >
+      <i class="close fa-thin fa-xmark-large"></i>
+    </div>
+    <header>
+       <h1 class="sr-only">
+          <img class="header-logo" alt="마켓 컬리" src="../images/logo.png" />
+      </h1>
+      <ul class="header-guide">
+        <li><a class="accent" href="./login.html">회원가입</a><div aria-label="hidden" class="line">|</div></li>
+        
+        <li><a href="./login_mini.html">로그인</a><div aria-label="hidden" class="line">|</div></li>
+        
+        <li>
+          <button class="service-btn">
+            고객센터<i class="dropdown-icon fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="header-box">
+        <a href="../index.html">
+          <img class="header-logo" alt="마켓 컬리" src="../images/logo.png" />
+        </a>
+        <a class="market accent" href="../index.html">마켓칼리</a>
+        <span class="line" aria-label="hidden">|</span>
+        <a class="beauty" href="/">뷰티칼리<sup class="sup">N</sup></a>
+        <form
+          action="https://formspree.io/f/xeqwwbwk"
+          method="POST"
+          class="search-form"
+        >
+          
+            <h2 class="sr-only">검색</h2>
+            <div class="search-form__content">
+              <div class="search-form__formInput">
+                <label for="search" class="sr-only">검색어</label>
+                <input
+                  type="search"
+                  id="search"
+                  name="search"
+                  required
+                  class="search-form__input"
+                  placeholder="검색어를 입력하세요."
+                />
+                <button type="submit" class="search-form__button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          
+        </form>
+        <ul class="header-icon">
+          <li>
+            <a href="/"><img alt="맵" src="../images/mark.png" /></a>
+          </li>
+          <li>
+            <a href="/"><img alt="하트" src="../images/heart.png" /></a>
+          </li>
+          <li>
+            <a href="/"><img alt="카트" src="../images/cart.png" /></a>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <div class="dropdown header-menu__category">
+          <i class="fa-solid fa-bars"></i><span>카테고리</span>
+          <ul class="dropdown-content">
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img alt="선물" src="../images/gift.png" /><span class="gift">선물하기</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img alt="채소" src="../images/vegetable.png" /><span class="gift">채소</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img
+                  alt="전통주"
+                  src="../images/traditional-liquor.png"
+                /><span class="gift">전통주</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img alt="와인" src="../images/wine.png" /><span class="gift">와인</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img alt="건강식품" src="../images/health.png" /><span class="gift">건강식품</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img
+                  alt="주방용품"
+                  src="../images/kitchen-utensils.png"
+                /><span class="gift">주방용품</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img
+                  alt="가전용품"
+                  src="../images/household-appliances.png"
+                /><span class="gift">가전용품</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img
+                  alt="반려동물"
+                  src="../images/companion-animal.png"
+                /><span class="gift">반려동물</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img
+                  alt="간편식"
+                  src="../images/convenience-food.png"
+                /><span class="gift">간편식</span></a
+              >
+            </li>
+            <li>
+              <a href="/" class="cartegory-btn"
+                ><img alt="여행" src="../images/travel.png" /><span class="gift">여행</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="header-menu">
+          <li><a href="/">신상품</a></li>
+          <li><a href="./product_list.html">베스트</a></li>
+          <li><a href="/">알뜰쇼핑</a></li>
+          <li><a href="/">특가/혜택</a></li>
+          <li>
+            <a class="delivery" href="/"
+              ><span class="accent">샛별 낮</span> 배송안내</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="shadow-line"></div>
+    <div>
+      <div class="introduction__div">
+        <img
+          class="jjolmyeno1"
+          alt="jjolmyeno"
+          src="../images/jjolmyeno1.png"
+        />
+        <div class="order">
+          <p class="moring-delivery">샛별배송</p>
+          <h2>[풀무원] 탱탱쫄면 (4개입)</h2>
+          <p class="spicy">튀기지 않아 부담 없는 매콤함</p>
+          <p>4,890<span>원</span></p>
+          <p>로그인 후, 적립 혜택이 제공됩니다.</p>
+
+          <div class="shipping">
+            <span>배송</span>
+            <span>샛별배송</span><br />
+            <div class="morning-star">
+              <span>23시 전 주문 시 내일 아침 7시 전 도착</span><br />
+              <span>(대구 부산 울산 샛별배송 운영시간 별도 확인)</span>
+            </div>
+          </div>
+          <div class="seller">
+            <span>판매자</span>
+            <span>칼리</span>
+          </div>
+          <div class="packaging">
+            <span>포장타입</span>
+            <span>포장 (종이포장)</span><br />
+            <span class="packaging-guide"
+              >택배배송은 에코 포장이 스티로품으로 대체됩니다.</span
+            >
+          </div>
+          <div class="sale">
+            <span>판매단위</span>
+            <span>1봉</span>
+          </div>
+          <div class="weight">
+            <span>중량/용량</span>
+            <span>123g<sup>*</sup>4봉</span>
+          </div>
+          <div class="origin">
+            <span>원산지</span>
+            <span>상세페이지 별도표기</span><br />
+          </div>
+          <div class="allergy">
+            <span>알레르기정보</span>
+            <span>-대두, 밀, 쇠고기 함유</span><br />
+            <div class="allergy-guide">
+              <span
+                >-계란, 우유, 메밀, 땅콩, 코등어, 개, 돼지고기, 새우, 복숭아,
+                토마토, 아황산류, 호두, 잣, 닭고기, 오징어, 조개류(굴, 전복,
+                홍합 포함)을 사용한 제품과 같은 제조시설에 제조</span
+              >
+            </div>
+          </div>
+          <div class="count">
+            <span class="count-text">상품선택</span>
+            <div class="count-box">
+              <p>[풀무원] 탱탱쫄면 (4개입)</p>
+              <div>
+                <div class="count-one">
+                  <i class="fa-solid fa-minus"></i><span>1</span
+                  ><i class="fa-solid fa-plus"></i>
+                </div>
+                <span>4,800원</span>
+              </div>
+            </div>
+          </div>
+          <div class="all-price">
+            <span>총 상품금액:<span>4,980</span>원</span>
+            <p><span>적립</span>로그인 후, 적립 혜택 제공</p>
+          </div>
+          <div class="basket">
+            <button><i class="fa-regular fa-heart fa-xl"></i></button>
+            <button><i class="fa-regular fa-bell fa-xl"></i></button>
+            <input id="basket-btn" type="checkbox" />
+            <label for="basket-btn" class="basket-btn">장바구니 담기</label>
+            <div class="balloon">
+              <img alt="jjolmyeno-mini" src="../images/jjolmyeno1.png" />
+              <div>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span><br />
+                <span>장바구니에 상품을 담았습니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="board-content">
+        <div class="board">
+          <ul class="board-menu">
+            <li>상품설명</li>
+            <li>상세정보</li>
+            <li>후기 (1,000)</li>
+            <li>문의</li>
+          </ul>
+          <img alt="jjolmyeno" src="../images/jjolmyeno2.png" />
+          <p class="board-phrases">튀기지 않아 부담 없는 매콤함</p>
+          <p class="board-pulmuone">[풀무원] 탱탱쫄면</p>
+          <div class="board-introduction">
+            <p class="board-introduction__p">
+              풀무원 진가는 매콤새콤한 양념과 탱탱한 면발에서 찾을 수 있지요.
+              풀우원은 이 맛을 더 부담 없이 즐길 수 있도록 튀기지 않고 만든
+              탱탱쫄면을 선보입니다. 밀가루와 감자 전분을 적절히 배합해 탐력이
+              좋고, 입에 넣었을 때는 찰지게 씹히죠. 고추장을 넣어 속성한
+              비빔장은 자연스럽고 깊은 맛을 냅니다. 간단하게 조리해 마지막 한
+              가닥까지 탱탱한 식감을 즐겨보세요. 취향에 따라 다양한 고명을 올려
+              드셔도 좋아요.
+            </p>
+          </div>
+        </div>
+        <div class="point-text">
+          <div class="point-line"></div>
+          <span>Karly's Check Point</span>
+          <div class="point-line"></div>
+        </div>
+        <img
+          class="board-point__img"
+          alt="checkPoint"
+          src="../images/check-point.png"
+        />
+        <img alt="jjolmyenoExplanation" src="../images/jjolmyeno3.png" />
+        <div class="long-line"></div>
+        <div class="why">
+          <p class="why-text">WHY KARLY</p>
+          <div class="why-firstline why-karly">
+            <div>
+              <img alt="Committee" src="../images/list.png" />
+              <p class="why-firstline__subheading">깐깐한 상품위원회</p>
+              <p>
+                나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접
+                먹어보고, 경험해보고 성분, 맛 안정성 등 다각도의 기준을 통과한
+                상품만을 판매합니다.
+              </p>
+            </div>
+            <div>
+              <img alt="Differentiation" src="../images/box.png" />
+              <p class="why-firstline__subheading">차별화된 Karly Only 상품</p>
+              <p>
+                전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너,
+                마켓칼리, 3천여 개가 넘는 칼리 단독 브랜드, 스펙의 Karly Only
+                상품을 믿고 만나보세요.
+              </p>
+            </div>
+            <div>
+              <img alt="delivery" src="../images/truck.png" />
+              <p class="why-firstline__subheading">신선한 풀콜드체인 배송</p>
+              <p>
+                온라인 업계 최초로 산지에서 문 앞까지 상온, 냉장, 냉동 상품을
+                분리 포장 후 최저의 온도를 유지하는 냉장 배송 시스템,
+                풀콜드체인으로 상품을 신선하게 전해드립니다.
+              </p>
+            </div>
+          </div>
+          <div class="why-introduction why-secondline">
+            <div>
+              <img alt="price" src="../images/glasses.png" />
+              <p class="why-firstline__subheading">
+                고객, 생상자를 위한 최선의 가격
+              </p>
+              <p>
+                매주 대형 마트와 주요 온라인 마트의 가격 변동 상황을 확인해
+                신선식품은 품질을 타협하지 않는 선에서 최선의 가격으로,
+                가공식품은 언제나 합리적인 가격으로 정기 조정합니다.
+              </p>
+            </div>
+            <div>
+              <p class="why-firstline__subheading">
+                환경을 생각하는 지속 가능한 유통
+              </p>
+              <p>
+                친환경 포장재부터 생산자가 상품에만 집중할 수 있는 직매업
+                유통구조까지, 지속 가능한 유통을 고민하며 컬리를 있게 하는 모든
+                환경(생산자,커뮤니티,직원)이 더 나아질 수 있도록 노력합니다.
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-write">
+                <span class="review-write-text">상품후기</span>
+                <input id="review-btn" type="checkbox" />
+                <label for="review-btn" class="review-btn">후기 작성하기</label>
+              <form class="popup-form">
+                <h2>후기 작성</h2>
+                <div class="popup-form-information">
+                  <img alt="jjolmyeno-mini" src="../images/jjolmyeno1.png" />
+                  <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                </div>
+                <div class="popup-form-input">
+                  <div class="popup-title-box">
+                    <label for="title-review__label">제목</label>
+                    <textarea id="title-review__label" class="popup-title-box__input" placeholder="제목을 입력해 주세요"></textarea>
+                  </div>
+                  <div class="popup-detail-box">
+                    <label for="detail-review__label">내용</label>
+                    <textarea id="detail-review__label" class="popup-detail-box__input" placeholder="컬리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다. 식품 등의 표시광고에 대한 법률을 준수하고자 다음과 같은 부당한 상품평에 대해서는 별도 고지 없이 임시 대처, 비공개 전환, 삭제, 적립금 회수 등의 필요한 조치가 취해 질 수 있습니다. &#10;&#10;후기 작성 시 유의사항&#10;&#10;• 개인의 주관적인 의견으로 인해 상품의 기능 및 효과에 대하여 오해의 소지가 있는 내용 &#10;• 식품/건강기능식품과 관련하여 질병의 예방 및 치료, 체중감량(다이어트)에 효능효과가 있다는 내용&#10;• 일반 화장품을 기능성화장품의 효능효과가 있다는 내용을 통한 오인 표현&#10;• 의약외품을 의약품으로 오인하게 하는 표현&#10;• 생활화학제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용"></textarea>
+                  </div>
+                </div>
+                <div class="form-btn__div">
+                  <button class="form-btn-cancellation">취소</button>
+                  <button class="form-btn-registration">등록</button>
+                </div>
+              </form>
+            </div>
+            <div class="accumulate">
+              <h3>글후기 50원 적립금 혜택이 있어요.</h3>
+              <div class="accumulate__p">
+                <p>
+                  • 퍼플, 더퍼플은 2개 적립(100원) / 주간 베스트 후기로 선정 시
+                  5,000원 추가 적립
+                </p>
+                <p>• 후기 작성은 배송완료일부터 30일 이내 가능합니다.</p>
+                <p>
+                  • 작성하신 후기는 확인 후 적립금이 지급합니다. (영업일 기준
+                  평균 1~2일 소요)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="suggestion">
+          <div class="suggestion-quantity">
+            <span>총 2개</span>
+            <span>추천순 <span>| 최근 등록순</span></span>
+          </div>
+          <div class="notification-box">
+            <span class="notification">공지</span>
+            <input id="notification-btn" type="checkbox" />
+                <label for="notification-btn" class="emphasis">
+                  금주의 베스트 후기 안내
+                </label>
+            <ul class="emphasis-best">
+              <li>[ 금주의 Best 후기 및 상품 후기 적립금 정책 변경 안내 ]</li>
+              <li>고객님 안녕하세요. 컬리 입니다. 적립금 지급 정책을 안내드리니 컬리 이용에 참고 부탁드립니다.</li>
+              <li>■ 적립금 지급 정책 ■</li>
+              <li>1. 일반 후기 - 글 후기 50원/건</li>
+              <li>-사진 후기 100원/건</li>
+              <li>*퍼플/더퍼플 러버스 고객님께는 더블 후기 적립금이 지급됩니다.</li>
+              <li>*지급에 영업일 기준 1~2일 소요됩니다.</li>
+              <li>→ 금~일 작성 시, 월요일 지급</li>
+              <li>2. 베스트 후기</li>
+              <li>1&#41; 선정 건 수 : 일주일 최대 100건</li>
+              <li>2&#41; 혜택 : 선정 시 적립금 5,000원</li>
+              <li>3&#41; 지급 일시 : 매주 수요일(지급일이 공휴일의 경우 전 영업일)</li>
+              <li>*당첨 ID 및 그 주의 Best 후기는 후기 게시판에서 확인하실 수 있습니다.</li>
+              <li>3. 상품 후기 게시판(Product review) 적립금 지급 유의 사항</li>
+              <li>컬리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다. 따라서 후기 내용이 아래에 해당하는 경우에는 검토 후 삭제 및 적립금 회수 조치될 수 있습니다.</li>
+              <li>1. 욕설, 폭력성, 음란성, 상업성 등 업체나 타인에게 불쾌한 내용을 작성한 경우</li>
+              <li>2. 구매한 상품과 무관한 내용이나 동일 문자/단순 초성의 반복 등 부적합한 내용을 작성한 경우</li>
+              <li>3. 상품의 기능이나 효과 등에 오해의 소지가 있는 내용을 작성한 경우</li>
+              <li>4. 저작권, 초상권 등 타인의 권리를 침해하는 이미지, 동영상을 사용한 경우</li>
+              <li>5. 구매한 상품이 아닌 캡쳐 사진, 포장 박스 사진 등 상품과 관련 없는 이미지, 동영상을 사용한 경우</li>
+              <li>또한, 비정상적인 방법을 통해 후기를 작성하고 적립금을 취득한 경우 작성자에 법적 책임의 소지가 있음을 알려드립니다.</li>
+            </ul>
+          </div>
+          <p class="review-box">
+            <span class="notification">공지</span>
+            <span class="emphasis">상품 후기 적립금 정책 안내</span>
+          </p>
+          <div class="review-box review-board">
+            <span
+              ><span class="review-best">베스트</span
+              ><span class="review-purple">퍼플</span
+              ><span class="review-name">김*진</span></span
+            >
+            <div class="review-text">
+              <span class="review-four">[풀무원] 탱탱쫄면(4개입)</span>
+              <p>너무 맛있어여~</p>
+              <p>면이 쫄깃하고 양념도 짱맛나요!!</p>
+              <p class="review-date">2022.11.10</p>
+            </div>
+          </div>
+          <div class="review-box review-board">
+            <span
+              ><span class="review-best">베스트</span
+              ><span class="review-purple">퍼플</span
+              ><span class="review-name">김*식</span></span
+            >
+            <div class="review-text">
+              <span class="review-four">[풀무원] 탱탱쫄면 (4개입)</span>
+              <p>또 주문할것 같습니다.</p>
+              <p>너무 맛있어요 내스타일이야~!</p>
+              <p class="review-date">2022.11.10</p>
+            </div>
+          </div>
+          <div class="review-box review-board">
+            <span
+              ><span class="review-best">베스트</span
+              ><span class="review-purple">퍼플</span
+              ><span class="review-name">김*범</span></span
+            >
+            <div class="review-text">
+              <span class="review-four">[풀무원] 탱탱쫄면 (4개입)</span>
+              <p>너무 맛있어여~</p>
+              <p>면이 쫄깃하고 양념도 짱맛나요!!</p>
+              <p class="review-date">2022.11.10</p>
+            </div>
+          </div>
+          <div class="review-move">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="inquiry">
+            <span class="inquiry-text">상품문의</span>
+            <input id="inquiry-btn" type="checkbox" />
+            <label for="inquiry-btn" class="inquiry-btn">문의하기</label>
+            <form class="inquiry-popup-form">
+              <h2>상품 문의하기</h2>
+              <div class="popup-form-information">
+                <img alt="jjolmyeno-mini" src="../images/jjolmyeno1.png" />
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+              </div>
+              <div class="popup-form-input">
+                <div class="popup-title-box">
+                  <label for="title-inquiry__label">제목</label>
+                  <textarea id="title-inquiry__label" class="popup-title-box__input" placeholder="제목을 입력해 주세요"></textarea>
+                </div>
+                <div class="popup-detail-box">
+                  <label for="detail-inquiry__label">내용</label>
+                  <textarea id="detail-inquiry__label" class="popup-detail-box__input" placeholder="상품문의 작성 전 확인해 주세요&#10;• 답변은 영업일 기준 2~3일 소요됩니다.&#10;• 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.&#10;• 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이칼리 내 1:1 문의에 남겨주세요.&#10;&#10;제품&#10;• 입고일 : 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다.(종 모양을 클릭하여, 재입고 알림 설정 가능)&#10;• 제품 상세정보 : 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세이미지 또는 상세정보에서 확인 가능합니다."></textarea>
+                </div>
+              </div>
+              <div class="form-btn__div">
+                <button class="form-btn-cancellation">취소</button>
+                <button class="form-btn-registration">등록</button>
+              </div>
+          </form>
+          <div class="inquiry__p">
+            <p>
+              • 상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른
+              글은 사진동의 없이 담당 게시판으로 이동될 수 있습니다.
+            </p>
+            <p>
+              • 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리
+              내 1:1 문의에 남겨주세요.
+            </p>
+          </div>
+        </div>
+        <div class="inquiry__div">
+          <table class="inquiry-table">
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>답변상태</th>
+              <tr class="inquiry-tr">
+                <td>
+                  <div class="inquiry-notification-box">  
+                    <span class="notification">공지</span>판매(일시)중단 제품 안내
+                    (22.11.10 업데이트)
+                  </div>
+                </td>
+                <td class="inquiry-grey">칼리</td>
+                <td class="inquiry-grey">2017.02.01</td>
+                <td class="inquiry-grey">-</td>
+              </tr>
+              <tr class="inquiry-tr">
+                  <td>
+                    <div class="inquiry-pack-box">
+                      팩이 터져서 왔어요
+                    </div>
+                  </td>
+                  <td class="inquiry-grey">김*식</td>
+                  <td class="inquiry-grey">2022.11.11</td>
+                  <td class="inquiry-grey">답변대기</td>    
+              </tr>
+              <tr class="answer">
+                <td>
+                  <div class="answer-qa">
+                    <div class="answer-question-box">
+                      <img class="answer__img" alt="Q" src="../images/q.png" />
+                      <span class="answer-question">
+                        스티로품 박스도 손상되어 있어 포장이 터져 엉망이네요
+                        환불 요청합니다
+                      </span>
+                    </div>
+
+                    <br />
+                    <div class="answer-greeting-box">
+                      <img class="answer__img" alt="A" src="../images/a.png" />
+                      <span class="answer-greeting"
+                        >안녕하세요. 칼리입니다.<br />
+                        믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.</span
+                      >
+                    </div>
+                    <br />
+                    <br />
+                    <div class="answer-sorry-box">
+                      <span class="answer-sorry">
+                        더불어, 해당 게시판은 실시간으로 상담이 어려워
+                        순차적으로 답변드리지 못하여 대단히 죄송합니다.
+                      </span>
+                    </div>
+                    <br /><br />
+                    <div class="answer-matters-box">
+                      <span class="answer-matters"
+                        >다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해
+                        안내 받으신 점 확인하였습니다.</span
+                      >
+                    </div>
+                    <br />
+                    <br />
+                    <div class="answer-inconvenience-box">
+                      <span class="answer-inconvenience">
+                        불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고
+                        최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는
+                        칼리가 되겠습니다.
+                      </span>
+                    </div>
+                    <br /><br />
+                    <div class="answer-give-box">
+                      <span>칼리 드림.</span>
+                    </div>
+                    <br /><br />
+                    <div class="answer-date-box">
+                      <span class="inquiry-grey">2022.11.11</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="inquiry-tr">
+                <td class="inquiry-grey">
+                  <div class="inquiry-secret-box">
+                    비밀글입니다.<img alt="lock" src="../images/lock.png" />
+                  </div>
+                </td>
+                <td class="inquiry-grey">김*진</td>
+                <td class="inquiry-grey">2022.10.09</td>
+                <td class="inquiry-grey">답변대기</td>
+              </tr>
+              <tr class="inquiry-tr">
+                <td class="inquiry-grey">
+                  <div class="inquiry-secret-box">
+                  비밀글입니다.
+                  <img alt="lock" src="../images/lock.png" />
+                  </div>
+                </td>
+                <td class="inquiry-grey">김*범</td>
+                <td class="inquiry-grey">2022.09.13</td>
+                <td class="inquiry-purple">답변완료</td>
+              </tr>
+              <tr class="inquiry-tr">
+                <td class="inquiry-grey">
+                  <div class="inquiry-secret-box">
+                    비밀글입니다.<img alt="lock" src="../images/lock.png" />
+                  </div>
+                </td>
+                <td class="inquiry-grey">심*범</td>
+                <td class="inquiry-grey">2022.08.30</td>
+                <td class="inquiry-purple">답변완료</td>
+              </tr>
+              <tr class="inquiry-tr">
+                <td class="inquiry-grey">
+                  <div class="inquiry-secret-box">
+                    비밀글입니다.<img alt="lock" src="../images/lock.png" />
+                  </div>
+                </td>
+                <td class="inquiry-grey">야*</td>
+                <td class="inquiry-grey">2022.08.30</td>
+                <td class="inquiry-purple">답변완료</td>
+              </tr>
+              <tr class="inquiry-tr inquiry-end">
+                <td class="inquiry-grey">
+                  <div class="inquiry-secret-box">
+                    비밀글입니다.<img alt="lock" src="../images/lock.png" />
+                  </div>
+                </td>
+                <td class="inquiry-grey">김**사</td>
+                <td class="inquiry-grey">2022.07.23</td>
+                <td class="inquiry-purple">답변완료</td>
+              </tr>
+            </div>
+          </table>
+        </div>
+        <div class="inquiry-move">
+          <button><i class="fa-solid fa-chevron-left"></i></button>
+          <button><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <footer>
+      <h1 class="a11yHidden"></h1>
+      <section class="footer__top">
+        <div class="footer__contact">
+          <h4>고객행복센터</h4>
+          <!-- dt dd 추가 -->
+          <dl class="customerService">
+            <dt class="contact__number"><a href="tel:1644-1107">1644-1107</a></dt>
+            <dd class="contact__hour">월~토요일 오전 7시 - 오후 6시</dd>
+          </dl>
+          <dl>
+            <dt class="contact">카카오톡 문의</dt>
+            <dd> 월~토요일 <span aria-hidden="true">|</span> 오전 7시 - 오후 6시 <br />일/공휴일 <span aria-hidden="true">|</span> 오전 7시
+              - 오후 1시</dd>
+          </dl>
+          <dl>
+            <dt class="contact">1:1 문의</dt>
+            <dd>365일<br />고객센터 운영시간에 순차적으로 답변드리겠습니다.
+            </dd>
+          </dl>
+          <dl>
+            <dt class="contact">대량주문 문의</dt>
+            <dd>월~금요일 <span aria-hidden="true">|</span> 오전9시 - 오후 6시<br />점심시간 <span aria-hidden="true">|</span> 낮 12시 -
+              오후 1시
+            </dd>
+          </dl>
+          <div class="contact__order">
+            <div>
+              비회원 문의 :<a class="accent" href="mailto:help@karlycorp.com"> help@karlycorp.com</a>
+            </div>
+            <div>
+              비회원 대량주문 문의 :<a class="accent" href="help@karlycorp.com"> help@karlycorp.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <ul>
+            <!-- ul li 추가 -->
+            <li><a href="/">칼리소개</a></li>
+            <li><a href="/">칼리소개영상</a></li>
+            <li><a href="/">인재채용</a></li>
+            <li><a href="/">이용약관</a></li>
+            <li><a href="/">개인정보처리방침</a></li>
+            <li><a href="/">이용안내</a></li>
+          </ul>
+          <address>
+            <div>법인명 (상호) : 주식회사 컬리 <span aria-hidden="true">|</span> 사업자등록번호 : 261-81-23567 <span
+                aria-hidden="true">|</span> 사업자정보 확인</div>
+            <div>통신판매업 : 제 2018-서울강남-01646 호 <span aria-hidden="true">|</span> 개인정보보호책임자 : 이원준</div>
+            <div>주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) <span aria-hidden="true">|</span> 대표이사 : 김슬아</div>
+            <div>입점문의 : 입정문의하기 <span aria-hidden="true">|</span> 제휴문의 : <a class="accent"
+                href="mailto:business@karlycorp.com">business@karlycorp.com</a></div>
+            <div>채용문의 : <a class="accent" href="mailto:recruit@karlycorp.com">recruit@karlycorp.com</a></div>
+            <div>팩스 : 070 - 7500 - 6098</div>
+          </address>
+          <ul class="sns">
+            <!-- ul li 추가 -->
+            <li>
+              <a href="/">
+                <img src="../images/icon/Blog.svg" alt="Blog" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="../images/icon/FaceBook.svg" alt="FaceBook" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="../images/icon/Instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="../images/icon/NaverPost.svg" alt="NaverPost" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="../images/icon/Youtube.svg" alt="Youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="footer__client">
+          <div>
+            <img src="../images/logo_isms.svg" alt="logo_isms" />
+            <span>
+              [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영<br />(심사받지 않은 물리적 인프라 제외)<br />[유효기간] 2022.01.19 ~ 2025.01.18
+            </span>
+          </div>
+          <div>
+            <img src="../images/logo_privacy.svg" alt="logo_privacy" />
+            <span>
+              개인정보보호 우수 웹사이트<br />개인정보처리시스템 인증 (ePRIVACY PLUS)
+            </span>
+          </div>
+          <div>
+            <img src="../images/logo_tosspayments.svg" alt="logo_tosspayments" />
+            <span>
+              토스페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+            </span>
+          </div>
+          <div>
+            <img src="../images/logo_wooriBank.svg" alt="logo_wooriBank" />
+            <span>
+              고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <small>마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다. <br />
+          마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+        </small>
+        <small> &copy; KURLY CORP. ALL RIGHTS RESERVED </small>
+      </section>
+    </footer>
+  </body>
+</html>

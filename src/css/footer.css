@@ -1,20 +1,7 @@
-@import url(a11y.css);
-/* @import url(reset.css); */
-@import url(sr-only.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard.css");
 
-:root{
-  --color-primary: #5F0080;
-  --gray-400: #898989;
-}
 .accent{
   color : var(--color-primary);
-}
-*{
-  font-family: "pretendard" ,sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 a{
   text-decoration: none;
@@ -25,8 +12,8 @@ ul{
 }
 footer{
   /* background: lightblue; */
-  /* position: fixed; */
-  /* bottom: 0; */
+  /* position: fixed;
+  bottom: 0; */
   width: 100vw;
   padding: 1rem 0 0 0;
   border-top: 1px solid #d5d5d5;
@@ -46,58 +33,19 @@ footer{
   width: 1050px;
   margin: auto;
 }
-
-.info_container{
-  margin-top: 4rem;
+/* footer__contact */
+.footer__contact{
+  /* background: pink; */
 }
-
-.footer .inner_footer::after {
-  content: '';
-  clear: both;
-  display: block;
+.footer__contact h4{
 }
-
-.inner_footer .cc_footer {
-  float: left;
-  width: 534px;
-  line-height: 1.5;
-  margin-top: -2rem;
+.footer__contact dl{
+  padding: 0.5rem 0;
+  /* background: yellow; */
 }
-
-.inner_footer .cc_tit {
-  padding: 29px 0 2px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #333;
-  line-height: 24px;
+.customerService{
+  
 }
-
-.inner_footer .cc_view {
-  /* overflow: hidden; */
-  padding-top: 16px;
-}
-
-.inner_footer .cc_view .tit {
-  float: left;
-  width: 140px;
-  margin-right: 16px;
-}
-
-.inner_footer .cc_call {
-  padding-top: 20px;
-  display: flex;
-  gap: 3rem;
-}
-.order{
-  display: flex;
-  width: 140px;
-  height: 40px;
-  padding: 4px;
-  justify-content: center;
-  align-items: center;
-  gap: 4p
-}
-
 .contact__number{
   /* background: pink; */
   font-size: 2.5rem;
@@ -122,7 +70,10 @@ footer{
 .contact__order div{
   line-height: 1.5;
 }
-
+/* footer__info */
+.footer__info{
+  /* background: lightsalmon; */
+}
 .footer__info ul li{
   margin-right: 0.5rem;
 }
@@ -143,6 +94,7 @@ address div{
 }
 /* footer__client */
 .footer__client{
+  /* background: lightsteelblue; */
   grid-area: two;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -152,13 +104,18 @@ address div{
   border-top: 1px solid #d5d5d5;
   padding-top: 2rem;
 }
-
+.footer__client div{
+  /* background: peru; */
+}
 .footer__client img{
   float: left;
   margin-right: 1rem;
+  /* background: green; */
 }
-
-
+.footer__client span{
+  /* background: yellow; */
+}
+/*  */
 /* footer__bottom */
 .footer__bottom{
   background: #e9e9e9;

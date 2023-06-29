@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>header</title>
-    <link rel="stylesheet" href="/src/css/header.css" />
+    <link rel="stylesheet" href="../css/header.css" />
     <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
   </head>
   <body>
@@ -19,9 +19,9 @@
     <header>
       <h1 class="sr-only"><img src="../images/logo.png" alt="칼리" /></h1>
       <ul class="header-guide">
-        <li><a class="accent" href="./login.html">회원가입</a><div aria-label="hidden" class="line">|</div></li>
+        <li><a class="accent" href="/">회원가입</a><div aria-label="hidden" class="line">|</div></li>
         
-        <li><a href="./login_mini.html">로그인</a><div aria-label="hidden" class="line">|</div></li>
+        <li><a href="/">로그인</a><div aria-label="hidden" class="line">|</div></li>
         
         <li>
           <button class="service-btn">
@@ -30,10 +30,8 @@
         </li>
       </ul>
       <div class="header-box">
-        <a href="../index.html">
-          <img class="header-logo" alt="마켓 컬리" src="../images/logo.png" />
-        </a>
-        <a class="market accent" href="../index.html">마켓칼리</a>
+        <img class="header-logo" alt="마켓 컬리" src="../images/logo.png" />
+        <a class="market accent" href="/">마켓칼리</a>
         <span class="line" aria-label="hidden">|</span>
         <a class="beauty" href="/">뷰티칼리<sup class="sup">N</sup></a>
         <form
@@ -41,7 +39,7 @@
           method="POST"
           class="search-form"
         >
-          
+          <fieldset>
             <h2 class="sr-only">검색</h2>
             <div class="search-form__content">
               <div class="search-form__formInput">
@@ -59,7 +57,7 @@
                 </button>
               </div>
             </div>
-          
+          </fieldset>
         </form>
         <ul class="header-icon">
           <li>
@@ -146,7 +144,7 @@
         </div>
         <ul class="header-menu">
           <li><a href="/">신상품</a></li>
-          <li><a href="./product_list.html">베스트</a></li>
+          <li><a href="/">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
           <li>
