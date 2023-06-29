@@ -1,7 +1,6 @@
-@import url("../css/header.css");
-@import url("../css/footer.css");
+@import url("../css/common.css");
 
-.introduction {
+.introduction__div {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -80,10 +79,6 @@
 .allergy,
 .count {
   color: var(--dark-grey);
-}
-
-.introduction {
-  display: flex;
 }
 
 .shipping,
@@ -244,8 +239,8 @@
 
 .balloon {
   position: absolute;
-  top:100px;
-  right: 180px;
+  top:110px;
+  right: 550px;
   display: none;
   margin: 50px;
   width:254px;
