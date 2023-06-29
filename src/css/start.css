@@ -53,7 +53,7 @@ header {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: var(--color-primary);
+  background-color: var(--purple);
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -61,7 +61,7 @@ header {
 .line {
   font-size: 10px;
   display: inline;
-  color: var(--grey);
+  color: var(--gray);
 }
 .guide-wrapper{
   display: flex;
@@ -99,7 +99,7 @@ header {
 }
 
 .delivery {
-  color: var(--deep-grey);
+  color: var(--deep-gray);
 }
 
 .header-menu__category {
@@ -309,7 +309,7 @@ header {
 
   .beauty {
     position: relative;
-    color: var(--deep-grey);
+    color: var(--deep-gray);
     padding-left: 10px;
   }
 
@@ -405,7 +405,7 @@ header {
 
   .header-menu li:nth-child(5) {
     padding: 10px;
-    border: 1px solid var(--deep-grey);
+    border: 1px solid var(--deep-gray);
     border-radius: 30px;
   }
 }
@@ -527,7 +527,7 @@ main button{
 /* footer   */
 
 .accent{
-  color : var(--color-primary);
+  color : var(--purple);
 }
 
 /* *{

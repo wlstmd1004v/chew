@@ -35,7 +35,7 @@ body {
     width: 220px;
     height: 52px;
     align-items: center;
-    border-bottom: 1px solid var(--gray-100, #E1E1E1);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .category_box {
@@ -44,7 +44,7 @@ body {
     height: 52px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--gray-100, #E1E1E1);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .brand_box {
@@ -62,8 +62,8 @@ body {
     padding: 0px 0px 12px 0px;
     justify-content: center;
     align-items: center;
-    color: var(--gray-300, #A6A6A6);
-    border-bottom: 1px solid var(--gray-100, #E1E1E1);
+    color: var(--gray-300);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .more {
@@ -95,7 +95,7 @@ body {
 }
 
 .list__item {
-    color: var(--content, #333);
+    color: var(--content);
     font-size: 16px;
     font-family: Pretendard;
     line-height: 24px;
@@ -111,7 +111,7 @@ body {
     height: 52px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--gray-100, #E1E1E1);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .benefit_box {
@@ -120,7 +120,7 @@ body {
     height: 52px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--gray-100, #E1E1E1);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .division_box {
@@ -129,7 +129,7 @@ body {
     height: 52px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--gray-100, #E1E1E1);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .except_product_box {
@@ -141,7 +141,7 @@ body {
 }
 
 .main_title {
-    color: var(--black, #000);
+    color: var(--black);
     font-family: Pretendard;
     font-size: 22px;
     font-weight: 600;
@@ -149,7 +149,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid var(--gray-100, #E1E1E1);
+    border-top: 1px solid var(--gray-100);
     margin: 32px;
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 .count {
-    color: var(--content, #333);
+    color: var(--content);
     font-size: 16px;
     font-family: Pretendard;
     font-weight: 600;
@@ -219,7 +219,7 @@ body {
 }
 
 .delivery {
-    color: var(--gray-400, #898989);
+    color: var(--gray-400);
     font-size: 14px;
     font-family: Pretendard;
     font-weight: 600;
@@ -227,7 +227,7 @@ body {
 }
 
 .brand {
-    color: var(--content, #333);
+    color: var(--content);
     font-size: 18px;
     font-family: Pretendard;
     line-height: 160%;
@@ -239,7 +239,7 @@ body {
 }
 
 .sale {
-    color: var(--accent-yellow, #FA622F);
+    color: var(--orange);
     font-size: 22px;
     font-family: Pretendard;
     font-weight: 600;
@@ -247,7 +247,7 @@ body {
 }
 
 .price, .won {
-    color: var(--content, #333);
+    color: var(--content);
     font-size: 22px;
     font-family: Pretendard;
     font-weight: 600;
@@ -255,7 +255,7 @@ body {
 }
 
 .list__price {
-    color: var(--gray-400, #898989) !important;
+    color: var(--gray-400) !important;
     font-size: 14px;
     font-family: Pretendard;
     line-height: 120%;
@@ -263,14 +263,14 @@ body {
 }
 
 .product_detail {
-    color: var(--gray-400, #898989);
+    color: var(--gray-400);
     font-size: 14px;
     font-family: Pretendard;
 }
 
 .karlyonly, .limit {
     border-radius: 4px;
-    background: var(--gray-100, #E1E1E1);
+    background: var(--gray-100);
     font-size: 14px;
     font-family: Pretendard;
     font-weight: 600;
@@ -280,11 +280,11 @@ body {
 }
 
 .karlyonly {
-    color: var(--primary, #5F0080);
+    color: var(--purple);
 }
 
 .limit {
-    color: var(--content, #333);
+    color: var(--content);
 }
 
 .page__navigation {
@@ -301,6 +301,6 @@ body {
     width: 34px;
     height: 34px;
     justify-content: center;   
-    border: 1px solid var(--gray-100, #E1E1E1);
+    border: 1px solid var(--gray-100);
     text-decoration: none;
 }

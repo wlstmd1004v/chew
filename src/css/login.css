@@ -61,7 +61,7 @@ header {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: var(--color-primary);
+  background-color: var(--purple);
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -69,7 +69,7 @@ header {
 .line {
   font-size: 10px;
   display: inline;
-  color: var(--grey);
+  color: var(--gray);
 }
 .guide-wrapper{
   display: flex;
@@ -107,7 +107,7 @@ header {
 }
 
 .delivery {
-  color: var(--deep-grey);
+  color: var(--deep-gray);
 }
 
 .header-menu__category {
@@ -317,7 +317,7 @@ header {
 
 .beauty {
   position: relative;
-  color: var(--deep-grey);
+  color: var(--deep-gray);
   padding-left: 10px;
 }
 
@@ -413,7 +413,7 @@ header {
 
 .header-menu li:nth-child(5) {
   padding: 10px;
-  border: 1px solid var(--deep-grey);
+  border: 1px solid var(--deep-gray);
   border-radius: 30px;
   }
 }
@@ -447,7 +447,7 @@ h5 {
   max-width: 640px;
   margin: 0 auto;
   border-style: solid;
-  border-color: #6B6B6B white #333333;
+  border-color: var(--dark-gray) white #333333;
   border-top: solid 2px;
   border-bottom: solid 1px;
   padding: 5px;
@@ -480,7 +480,7 @@ input[type="button"] {
   width: 140px;
   height: 44px;
   font-size: 14px;
-  border : 3px solid #5f0080;
+  border : 3px solid var(--purple);
   border-radius: 5px;
   background: white;
   border-collapse : collapse;
@@ -605,7 +605,7 @@ height: 500px;
   font-size: 12px;
   font-weight: 700;
   margin: 0px;
-  color: #5f0080;
+  color: var(--purple);
   float: right;
   height: 20px;
   text-align: center;
@@ -618,7 +618,7 @@ height: 500px;
   font-size: 14px;
   font-weight: 700;
   color: white;
-  background: #5f0080;
+  background: var(--purple);
   border-radius: 5px;
   width: 300px;
   height: 50px;
@@ -626,7 +626,7 @@ height: 500px;
 
 .small {
   font-size: 8px;
-  color: #898989;
+  color: var(--gray-400);
   width: 640px;
   padding: 10px;
 }
@@ -636,11 +636,11 @@ height: 500px;
 /* --------------------------------------------------- */
 
 :root{
-  --color-primary: #5F0080;
-  --gray-400: #898989;
+  --color-primary: var(--purple);
+  --gray-400: var(--gray-400);
 }
 .accent{
-  color : var(--color-primary);
+  color : var(--purple);
 }
 *{
   font-family: "pretendard" ,sans-serif;

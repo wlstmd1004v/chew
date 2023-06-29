@@ -61,7 +61,7 @@ header {
     width: 100%;
     height: auto;
     text-align: center;
-    background-color: var(--color-primary);
+    background-color: var(--purple);
     padding: 10px;
     margin-bottom: 10px;
 }

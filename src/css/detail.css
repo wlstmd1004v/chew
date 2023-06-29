@@ -153,7 +153,7 @@
 .count-box {
   width: 500px;
   padding: 15px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
 }
 
 .count-box div:nth-child(1) {
@@ -163,7 +163,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 2px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
 }
 
 .count-box div:nth-child(2) {
@@ -199,7 +199,7 @@
   padding: 6px 9px 6px 9px;
   border-radius: 20px;
   color: white;
-  background-color: #fa622f;
+  background-color: var(--orange);
   margin-right: 5px;
   font-size: 10px;
 }
@@ -208,7 +208,7 @@
 .basket button:nth-child(2) {
   padding: 15px;
   border-radius: 3px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   background-color: white;
   margin-right: 5px;
 }
@@ -218,7 +218,7 @@
 }
 
 .basket button:nth-child(2) {
-  color: var(--grey);
+  color: var(--gray);
 }
 
 #basket-btn {
@@ -245,7 +245,7 @@
   margin: 50px;
   width:254px;
   height:100px;
-  background: var(--grey);
+  background: var(--gray);
   border-radius: 10px;
  }
 
@@ -253,7 +253,7 @@
   border-top:0px solid transparent;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid var(--grey);
+  border-bottom: 10px solid var(--gray);
   content:"";
   position:absolute;
   top:-10px;
@@ -300,20 +300,20 @@
 
 .board-menu li:nth-child(1) {
   color: var(--purple);
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   border-bottom: none;
   border-right: none;
 }
 
 .board-menu li:nth-child(2),
 .board-menu li:nth-child(3) {
-  border: 1px solid var(--middle-grey);
-  background-color: var(--grey);
+  border: 1px solid var(--gray-300);
+  background-color: var(--gray);
 }
 
 .board-menu li:nth-child(4) {
-  border: 1px solid var(--middle-grey);
-  background-color: var(--grey);
+  border: 1px solid var(--gray-300);
+  background-color: var(--gray);
   border-left: none;
 }
 
@@ -339,7 +339,7 @@
 
 .board-introduction {
   width: 1050px;
-  border-top: 1px solid var(--grey);
+  border-top: 1px solid var(--gray);
   margin-bottom: 130px;
 }
 
@@ -352,7 +352,7 @@
   width: 365px;
   display: inline-block;
   padding: 6px 0px 6px 0px;
-  border-top: 1px solid var(--grey);
+  border-top: 1px solid var(--gray);
 }
 
 .point-text {
@@ -366,7 +366,7 @@
 
 .long-line {
   width: 1050px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   margin-bottom: 70px;
 }
 
@@ -504,8 +504,8 @@
   display: flex;
   align-items: center;
   padding: 10px 0px 10px 0px;
-  border-top: 1px solid var(--grey);
-  border-bottom: 1px solid var(--grey);
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
 }
 
 .popup-form-information img {
@@ -520,7 +520,7 @@
 
 .popup-form-input {
   padding: 10px 0px 50px 0px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--gray);
 }
 
 .popup-form-input label {
@@ -540,7 +540,7 @@
 .popup-title-box__input {
   width: 900px;
   height: 40px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   border-radius: 5px;
   padding: 15px 0px 0px 20px;
 }
@@ -557,7 +557,7 @@
 .popup-detail-box__input {
   width: 900px;
   height: 220px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   border-radius: 5px;
   padding: 15px 0px 0px 20px;
 }
@@ -578,7 +578,7 @@
   width: 186px;
   height: 54px;
   color: black;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   border-radius: 5px;
 }
 
@@ -588,7 +588,7 @@
 }
 
 .form-btn-registration {
-  background-color: var(--middle-grey);
+  background-color: var(--gray-300);
 }
 
 .accumulate h3 {
@@ -603,7 +603,7 @@
 }
 
 .accumulate__p {
-  color: var(--dark-grey);
+  color: var(--gray-500);
   margin-left: 10px;
 }
 
@@ -612,7 +612,7 @@
   padding: 0px 0px 25px 0px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 .suggestion-quantity span:nth-child(1) {
@@ -620,7 +620,7 @@
 }
 
 .suggestion-quantity span:nth-child(2) span {
-  color: var(--dark-grey);
+  color: var(--gray-500);
 }
 
 .review-box {
@@ -628,7 +628,7 @@
   display: flex;
   align-items: center;
   padding: 20px 0px 20px 20px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--gray);
 }
 
 .review-board {
@@ -638,7 +638,7 @@
 .notification-box {
   width: 1050px;
   padding: 20px 0px 20px 20px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--gray);
 }
 
 #notification-btn {
@@ -661,7 +661,7 @@
 
 .notification {
   padding: 5px;
-  background-color: var(--grey);
+  background-color: var(--gray);
   margin-right: 25px;
   border-radius: 2px;
 }
@@ -688,7 +688,7 @@
 }
 
 .review-four {
-  color: var(--middle-grey);
+  color: var(--gray-300);
   margin-bottom: 20px;
 }
 
@@ -703,7 +703,7 @@
 }
 
 .review-date {
-  color: var(--middle-grey);
+  color: var(--gray-300);
 }
 
 .review-move {
@@ -716,17 +716,17 @@
 .review-move button:nth-child(2) {
   padding: 15px 20px 15px 20px;
   border-radius: 3px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   background-color: white;
   margin-right: 15px;
 }
 
 .review-move button:nth-child(1) {
-  color: var(--grey);
+  color: var(--gray);
 }
 
 .inquiry__div {
-  background-color: var(--grey);
+  background-color: var(--gray);
 }
 
 .inquiry-table th,
@@ -784,12 +784,12 @@
 
 .inquiry__p {
   font-size: 13px;
-  color: var(--dark-grey);
+  color: var(--gray-500);
   margin: 20px 0px 40px 10px;
 }
 
 .inquiry-grey {
-  color: var(--middle-grey);
+  color: var(--gray-300);
 }
 
 .inquiry-purple {
@@ -798,17 +798,17 @@
 
 .inquiry-table {
   width: 1050px;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--black);
 }
 
 .inquiry-table th {
   line-height: 3rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 .inquiry-tr {
   line-height: 3rem;
-  border-bottom: 2px solid var(--grey);
+  border-bottom: 2px solid var(--gray);
 }
 
 .answer-qa {
@@ -878,13 +878,13 @@
 .inquiry-move button {
   padding: 15px 20px 15px 20px;
   border-radius: 3px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--gray);
   background-color: white;
   margin: 0px 0px 30px 5px;
 }
 
 
 .inquiry-move button:nth-child(1) {
-  color: var(--grey);
+  color: var(--gray);
   margin-right: 15px;
 }
