@@ -1,6 +1,6 @@
 # 🦁15먹조 Project 15 - Market Karly 🛒
 <p align="center">
-<img src="https://github.com/ingbin-git/LikeLionProject-Team12/assets/128195013/63a1811c-06e4-4389-8172-06530e8b2d20" width="500px"/>
+<img src="https://github.com/lion-icandoit/Icandoit-team13/assets/111503649/7f27d8dc-b1c6-44a2-8620-517d14af0502" width="500px"/>
 </p>
 
 ### 프론트엔드 스쿨 6기 html/css Project - 15조
